@@ -1,0 +1,40 @@
+@import '../../../sass/abstracts/variables';
+@import '../../../sass/abstracts/colors';
+
+$button-font-size: $smaller-font-size;
+
+.form {
+   margin-top: 5rem;
+   display: grid;
+   grid-template-columns:
+      [left-side-space-start] 20rem [left-side-space-end mid-container-start] 1fr
+      [mid-container-end right-side-space-start] 20rem
+      [right-side-space-end];
+   grid-template-rows: [row-1-start] 15rem [row-1-end row-2-start] 5rem [row-2-end];
+
+   &__result {
+      grid-column: mid-container-start/mid-container-end;
+   }
+
+   &__button {
+      grid-column: mid-container-start/mid-container-end;
+      grid-row: row-2-start/row-2-end;
+      justify-self: center;
+   }
+}
+
+
+.btn {
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 1rem 2rem;
+   display: inline-block;
+   transition: all .2s;
+   position: relative;
+   font-weight: 500;
+   font-size: $button-font-size; 
+
+   &:disabled {
+      background-color: $grey;
+   }
+}

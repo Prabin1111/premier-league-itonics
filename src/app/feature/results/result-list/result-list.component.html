@@ -1,0 +1,14 @@
+<div class="result-list-container">
+    <ng-container *ngFor="let result of resultList">
+        <ng-container *ngIf="haveGame(result)">
+            <div class="result__date">
+                {{result?.date | date : 'MM/dd/yyyy'}}
+            </div>
+            <div class="result__game-list" *ngFor="let game of result?.games"
+                (click)="onClick(game, result?.id, result?.date )">
+                <app-game [game]="game"></app-game>
+            </div>
+        </ng-container>
+    </ng-container>
+
+</div>

@@ -1,0 +1,30 @@
+<div class="league-page-container">
+    <div class="league-page__header">
+        <app-page-header [pageTitle]="pageTitle"></app-page-header>
+    </div>
+    <div class="league-page__table">
+        <table ILTable>
+
+            <tr  IL-hr>
+                <th  IL-hc *ngFor="let header of displayedColumns">
+                    {{header}}
+                </th>
+            </tr>
+    
+            <ng-container *ngIf="haveTableData()">
+                <tr IL-dr   *ngFor="let teamStats of leagueTable; let i = index">
+                    <td IL-dc> {{i + 1}}</td>
+                    <td IL-dc>{{teamStats.name}} <span class="bold">{{isChampion(i + 1)}}</span> </td>
+                    <td IL-dc>{{teamStats.PLD}}</td>
+                    <td IL-dc>{{teamStats.W}}</td>
+                    <td IL-dc>{{teamStats.D}}</td>
+                    <td IL-dc>{{teamStats.L}}</td>
+                    <td IL-dc>{{teamStats.Pts}}</td>
+                </tr>
+            </ng-container>
+            <ng-container *ngIf="!haveTableData()" >
+               <span> No Information </span>     
+            </ng-container>
+    </table>
+    </div>
+</div>

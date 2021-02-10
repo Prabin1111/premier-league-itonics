@@ -1,0 +1,11 @@
+<div class="game-container">
+    <div class="game__home" [ngClass]="isWinner(game?.homeTeam?.gameResult)">
+        {{game?.homeTeam?.teamName}} <span> ( {{game?.homeTeam?.goalScore}} ) </span>
+    </div>
+    <div class="game__vs">
+        VS
+    </div>
+    <div class="game__away" [ngClass]="isWinner(game?.awayTeam?.gameResult)">
+        {{game?.awayTeam?.teamName}} <span> ( {{game?.awayTeam?.goalScore}} ) </span>
+    </div>
+</div>

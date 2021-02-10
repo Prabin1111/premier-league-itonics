@@ -1,0 +1,41 @@
+@import '../../../../../sass/abstracts/variables';
+@import '../../../../../sass/abstracts/colors';
+
+$highlight-bg: $highlight-header;
+$button-font-size: $smaller-font-size;
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header {
+    border: 1px solid #000000;
+    &--shadow {
+        box-shadow: 0.5rem 0.5rem 0.2rem #000000;
+    }
+
+    &__button {
+        &,
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            display: inline-block;
+            transition: all .2s;
+            position: relative;
+            font-weight: 500;
+            font-size: $button-font-size;
+    
+            //Change for the <button> element
+            border: none;
+            cursor: pointer;
+        }
+
+        &--is-active {
+            background-color: $highlight-bg;
+        }
+    }
+}

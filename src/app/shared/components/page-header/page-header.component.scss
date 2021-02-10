@@ -1,0 +1,8 @@
+@import '../../../../sass/abstracts/variables';
+
+$page-header-font-size: $small-font-size;
+.page-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: $page-header-font-size;
+}

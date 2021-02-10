@@ -1,0 +1,8 @@
+<div class="result-container">
+    <div class="result__page-header"> 
+        <app-page-header [pageTitle]="pageTitle"></app-page-header>
+    </div>
+    <div class="result__page-content">
+        <app-result-list [resultList]="resultList" (update)="updateGameDetail($event)"> </app-result-list>
+    </div>
+</div>

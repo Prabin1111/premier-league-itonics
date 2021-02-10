@@ -123,9 +123,61 @@
               "devServerTarget": "premier-league-itonics:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
+        }
+      }
+    },
+    "itonics-lib": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/itonics-lib",
+      "sourceRoot": "projects/itonics-lib/src",
+      "prefix": "IL",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/itonics-lib/tsconfig.lib.json",
+            "project": "projects/itonics-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/itonics-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/itonics-lib/src/test.ts",
+            "tsConfig": "projects/itonics-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/itonics-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/itonics-lib/tsconfig.lib.json",
+              "projects/itonics-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "premier-league-itonics"
+  "defaultProject": "premier-league-itonics",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,29 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { LeagueTableService } from '@sharedService/league-table/league-table.service';
+
+import { LeagueTableComponent } from './league-table.component';
+
+describe('LeagueTableComponent', () => {
+  let component: LeagueTableComponent;
+  let fixture: ComponentFixture<LeagueTableComponent>;
+  let leagueTableService: LeagueTableService;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
+      declarations: [ LeagueTableComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(LeagueTableComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

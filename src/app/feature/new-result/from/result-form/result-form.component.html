@@ -1,0 +1,47 @@
+<div class="form-container" [formGroup]="formGroup">
+    <div class="form__group">
+        <label class="form__label">{{formLabel?.homeTeam}}</label>
+        <select class="form__select" placeholder="Choose Team" [formControlName]="fieldsKeys.homeTeamName">
+            <option value="" disabled>Choose Team</option>
+            <ng-container *ngIf="clubList?.clubs">
+                <option *ngFor="let club of clubList?.clubs" [value]="club?.name">{{club?.name}}</option>
+            </ng-container>
+        </select>
+        <div class="error-section" *ngIf="shouldShowErrorMessage(formGroup.controls[fieldsKeys.homeTeamName], isSubmit)">
+            {{ getErrorMessage( formLabel?.homeTeam ,formGroup.controls[fieldsKeys.homeTeamName])}}
+        </div>
+    </div>
+    <div class="form__group">
+        <label class="form__label">{{formLabel?.awayTeam}}</label>
+        <select class="form__select" placeholder="Choose Team" [formControlName]="fieldsKeys.awayTeamName">
+            <option value="" disabled>Choose Team</option>
+            <ng-container *ngIf="clubList?.clubs">
+                <option *ngFor="let club of clubList?.clubs" [value]="club?.name">{{club?.name}}</option>
+            </ng-container>
+        </select>
+        <div class="error-section" *ngIf="shouldShowErrorMessage(formGroup.controls[fieldsKeys.awayTeamName], isSubmit)">
+            {{ getErrorMessage(formLabel?.awayTeam ,formGroup.controls[fieldsKeys.awayTeamName])}}
+        </div>
+    </div>
+    <div class="form__group">
+        <label class="form__label">{{formLabel?.score}}</label>
+        <input class="form__input" type="number" [formControlName]="fieldsKeys.homeScore" />
+        <div class="error-section" *ngIf="shouldShowErrorMessage(formGroup.controls[fieldsKeys.homeScore], isSubmit)">
+            {{ getErrorMessage( formLabel?.score ,formGroup.controls[fieldsKeys.homeScore])}}
+        </div>
+    </div>
+    <div class="form__group">
+        <label class="form__label">{{formLabel?.score}}</label>
+        <input class="form__input" type="number" [formControlName]="fieldsKeys.awayScore" />
+        <div class="error-section" *ngIf="shouldShowErrorMessage(formGroup.controls[fieldsKeys.awayScore], isSubmit)">
+            {{ getErrorMessage( formLabel?.score ,formGroup.controls[fieldsKeys.awayScore])}}
+        </div>
+    </div>
+    <div class="form__group">
+        <label class="form__label">{{formLabel?.date}}</label>
+        <input class="form__input" type="date" [formControlName]="fieldsKeys.date" />
+        <div class="error-section" *ngIf="shouldShowErrorMessage(formGroup.controls[fieldsKeys.date], isSubmit)">
+            {{ getErrorMessage( formLabel?.date ,formGroup.controls[fieldsKeys.date])}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="result-container">
+    <div class="result__header">
+        <app-page-header [pageTitle]="pageTitle"></app-page-header>
+    </div>
+    <div class="result__form-container">
+        <form class="form" *ngIf="form?.formGroup" (submit)="newResult()" [formGroup]="form?.formGroup">
+            <div class="form__result">
+                <app-result-form [formGroup]="form?.formGroup" [clubList]="clubList" [isSubmit]="isSubmit"
+                    [formLabel]="formLabel"> </app-result-form>
+            </div>
+            <div class="form__button">
+                <button class="btn" [disabled]="!form.isValid()" type="submit"> Enter Result </button>
+            </div>
+        </form>
+    </div>
+</div>

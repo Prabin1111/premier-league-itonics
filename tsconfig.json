@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -19,11 +18,54 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@layout/*": [
+        "./src/app/core/layout/*"
+      ],
+      "@publicLayout/*": [
+        "./src/app/core/layout/public/*"
+      ],
+      "@results/*": [
+        "./src/app/feature/results/*"
+      ],
+      "@newResult/*": [
+        "./src/app/feature/new-result/*"
+      ],
+      "@leagueTable/*": [
+        "./src/app/feature/league-table/*"
+      ],
+      "@sharedModel/*": [
+        "./src/app/shared/models/*"
+      ],
+      "@sharedConstant/*": [
+        "./src/app/shared/constant/*"
+      ],
+      "@sharedEnum/*": [
+        "./src/app/shared/enum/*"
+      ],
+      "@coreService/*": [
+        "./src/app/core/services/*"
+      ],
+      "@sharedCustomType/*": [
+        "./src/app/shared/custom-type/*"
+      ],
+      "@sharedUtil/*": [
+        "./src/app/shared/utils/*"
+      ],
+      "@sharedService/*": [
+        "./src/app/shared/service/*"
+      ],
+      "itonics-lib": [
+        "dist/itonics-lib/itonics-lib",
+        "dist/itonics-lib"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictPropertyInitialization ": false,
+    "strictTemplates": false
   }
 }

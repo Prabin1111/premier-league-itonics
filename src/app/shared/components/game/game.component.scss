@@ -1,0 +1,29 @@
+@import '../../../../sass/abstracts/colors';
+$winner-color: $highlight-win;
+
+.game-container {
+    display: flex;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+}
+
+.game {
+    &__home {
+        width: max-content;
+        padding-right: 2rem;
+    }
+
+    &__vs  {
+        padding-right: 2rem;
+
+    }
+
+    &__away {
+        width: max-content;
+    }
+
+    &__winner {
+        font-weight: 600;
+        color: $winner-color;
+    }
+}

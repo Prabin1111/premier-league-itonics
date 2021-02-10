@@ -1,0 +1,9 @@
+<div class="header-container">
+        <ng-container *ngFor="let header of headerList?.headers">
+            <div class="header header--shadow">
+                <a class="header__button" [routerLink]="header?.path" [routerLinkActive]="'header__button--is-active'">
+                    {{ header?.title || '-'}}
+                </a>
+            </div>
+        </ng-container>
+</div>
