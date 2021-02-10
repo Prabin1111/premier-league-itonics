@@ -1,0 +1,17 @@
+{
+    "totalHeaders": 3,
+    "headers": [
+        {
+            "title": "Results",
+            "path": "/results"
+        },
+        {
+            "title": "New Results",
+            "path": "/newResult"
+        },
+        {
+            "title": "League Table",
+            "path": "/leagueRoute"
+        }
+    ]
+}

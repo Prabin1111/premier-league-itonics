@@ -1,0 +1,164 @@
+{
+    "table": [
+        {
+            "name": "Arsenal",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Aston Villa",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Brighton & Hove Albion",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Burnley",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Chelsea",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Crystal Palace",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Everton",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Fulham",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Leeds United",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Leicester City",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Liverpool",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Manchester City",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Manchester United",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Newcastle United",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Sheffield United",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Southampton",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Tottenham Hotspur",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "West Bromwich Albion",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "West Ham United",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        },
+        {
+            "name": "Wolverhampton Wanderers",
+            "PLD": 0,
+            "W": 0,
+            "L": 0,
+            "D": 0,
+            "Pts": 0
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "results": [
+        {
+            "date": "2021-02-12",
+            "games": [
+                {
+                    "id": "uwyeirywq8932weiyriwqe",
+                    "teamVS": "Chelsea F.C. VS Liverpool F.C.",
+                    "homeTeam": {
+                        "teamName": "Chelsea F.C.",
+                        "goalScore": 2,
+                        "goalAgainst": null,
+                        "gameResult": "WIN"
+                    },
+                    "awayTeam": {
+                        "teamName": "Liverpool F.C.",
+                        "goalScore": null,
+                        "goalAgainst": 2,
+                        "gameResult": "LOSE"
+                    }
+                },
+                {
+                    "id":"237897598294329hdfkjsk",
+                    "teamVS": "Manchester United VS Manchester city",
+                    "homeTeam": {
+                        "teamName": "Manchester United",
+                        "goalScore": 1,
+                        "goalAgainst": 2,
+                        "gameResult": "LOSE"
+
+                    },
+                    "awayTeam": {
+                        "teamName": "Manchester City",
+                        "goalScore": 2,
+                        "goalAgainst": 1,
+                        "gameResult": "WIN"
+                    }
+                }
+            ]
+        },
+        {
+            "date": "2021-02-08",
+            "games": [
+                {
+                    "teamVS": "Chelsea F.C. VS Liverpool F.C.",
+                    "homeTeam": {
+                        "teamName": "Chelsea F.C.",
+                        "goalScore": 4,
+                        "goalAgainst": 3,
+                        "gameResult": "WIN"
+                    },
+                    "awayTeam": {
+                        "teamName": "Liverpool F.C.",
+                        "goalScore": 3,
+                        "goalAgainst": 4,
+                        "gameResult": "LOSE"
+                    }
+                }
+            ]
+        }
+    ]
+}
